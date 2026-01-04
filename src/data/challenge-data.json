@@ -23,7 +23,7 @@
     {
       "name": "Wild Card",
       "icon": "Sparkles",
-      "description": "Flexible weeks for exploration, collaboration, or polish"
+      "description": "Strategic breaks for reflection, consolidation, and professional growth"
     }
   ],
   "projects": [
@@ -33,6 +33,7 @@
       "theme": "Tools & Hardware",
       "concept": "Terminal rendering, git internals, event loops",
       "description": "Interactive git interface in the terminal. Build a TUI with real-time file status, interactive staging/unstaging, commit history browser, and branch visualization. Learn libraries like ratatui (Rust) or blessed/rich (Python).",
+      "recommendedTools": "Rust + ratatui (best performance, great TUI ecosystem), Python + rich/textual (faster prototyping), or Node.js + blessed (if you prefer TypeScript). Learn terminal control sequences and event loops.",
       "link": "",
       "completed": false,
       "pinned": false
@@ -43,8 +44,7 @@
       "theme": "Video Games",
       "concept": "Game loop, delta time, basic collision",
       "description": "2-player local, score to 11, ball speeds up over time. Learn game loops, frame-independent movement, and AABB collision. Done = playable match.",
-      "engine": "raw",
-      "engineNote": "Use Raylib, Love2D, or Pygame. Too simple for Godot—better for learning fundamentals.",
+      "recommendedTools": "Raylib (C/C++, easy to learn), Love2D (Lua, great for 2D), or Pygame (Python, beginner-friendly). Avoid game engines like Godot\u2014learn the fundamentals from scratch.",
       "link": "",
       "completed": false,
       "pinned": false
@@ -55,6 +55,7 @@
       "theme": "Creative Coding",
       "concept": "Particle systems, emission, lifetime",
       "description": "Explosions of color. Build a flexible particle system with emitters, forces, lifetime, and blending modes.",
+      "recommendedTools": "Processing (Java, visual focus), p5.js (JavaScript, web-based), or openFrameworks (C++, performance). Focus on particle system architecture and visual effects.",
       "link": "",
       "completed": false,
       "pinned": false
@@ -65,6 +66,7 @@
       "theme": "Build Your Own X",
       "concept": "Sockets, protocol parsing, request/response",
       "description": "The foundation of the web. Parse HTTP requests, handle routing, serve static files, all from raw sockets.",
+      "recommendedTools": "Python (socket library + no frameworks), Rust (tokio for async), or Node.js (net module, not Express). Build from raw TCP sockets to understand HTTP protocol.",
       "link": "",
       "completed": false,
       "pinned": false
@@ -75,8 +77,7 @@
       "theme": "Video Games",
       "concept": "Sprite management, object pooling",
       "description": "3 levels (hand-designed), 2 powerups (multiball, wide paddle), particle burst on brick break. Done = can beat all 3 levels.",
-      "engine": "raw",
-      "engineNote": "Use Raylib, Love2D, or Pygame. Good for practicing sprite batching and object pooling without engine magic.",
+      "recommendedTools": "Raylib (C/C++), Love2D (Lua), or Pygame (Python). Practice sprite batching and object pooling without engine abstractions. Keep it raw to learn the patterns.",
       "link": "",
       "completed": false,
       "pinned": false
@@ -89,7 +90,8 @@
       "description": "Emergence from simple rules. Implement Conway's Game of Life, then explore variations and custom rulesets.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js, or Python + Pygame. Focus on the algorithm, not graphics\u2014even a terminal/console implementation works. Experiment with different rulesets."
     },
     {
       "week": 7,
@@ -99,7 +101,8 @@
       "description": "Index and search your entire codebase. Build an inverted index for fast searches, implement fuzzy matching and regex support, add file previews in results. Handle multiple languages and respect .gitignore.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Rust (performance matters for large codebases), Python (easier to prototype), or Go. Build from scratch\u2014no search libraries. Learn inverted index data structures."
     },
     {
       "week": 8,
@@ -107,11 +110,10 @@
       "theme": "Video Games",
       "concept": "Grid logic, undo systems",
       "description": "10 hand-designed levels, undo/redo (full history), level select, move counter. Done = all 10 levels solvable.",
-      "engine": "raw",
-      "engineNote": "Use Raylib, Love2D, or Pygame. Grid-based logic is simple enough to go raw, and you'll understand the command pattern better.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Raylib, Love2D, or Pygame. Grid-based logic is simple enough to go raw. Focus on understanding the command pattern for undo/redo."
     },
     {
       "week": 9,
@@ -121,17 +123,19 @@
       "description": "Mountains from math. Use noise functions to generate realistic heightmaps, add erosion, and render as 2D or 3D terrain.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js for 2D visualization, or Three.js for 3D. Learn noise algorithms (Perlin, Simplex). Implement the noise function yourself for maximum learning."
     },
     {
       "week": 10,
-      "title": "Childhood Game Remake",
+      "title": "Game Feel / Juice Week",
       "theme": "Wild Card",
-      "concept": "Reverse engineering, nostalgia-driven design",
-      "description": "Recreate a game from memory. Figure out the mechanics of something you loved, rebuild it with fresh eyes.",
+      "concept": "Polish, screenshake, particles, game feel",
+      "description": "Take your Pong or Breakout and make it feel AMAZING. Add screenshake, particle effects, sound effects, smooth transitions, and visual polish. Learn what makes games satisfying to play. The goal is to understand juice and game feel deeply.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Use whatever framework you used for the original game (Raylib, Love2D, Pygame). Add a sound library if you haven't yet. Focus on tweening, screenshake algorithms, and particle systems."
     },
     {
       "week": 11,
@@ -142,7 +146,8 @@
       "link": "#",
       "githubLink": "#",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python, Rust, or Go. Build from scratch\u2014no database libraries. Learn about hash tables, serialization formats (JSON, binary), and write-ahead logs."
     },
     {
       "week": 12,
@@ -150,11 +155,10 @@
       "theme": "Video Games",
       "concept": "Vectors, bullet patterns, spawning systems",
       "description": "Survive 5 waves. 2 weapons (pistol, shotgun), 2 enemy types (chaser, shooter). Hand-placed spawns. Done = can win or lose.",
-      "engine": "either",
-      "engineNote": "Godot works well here, but going raw (Raylib/Love2D) will teach you 2D vector math more deeply. Your call.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Raylib or Love2D for 2D vector math practice, or Godot if you want to focus on game design over implementation. Your choice depending on learning goals."
     },
     {
       "week": 13,
@@ -164,7 +168,8 @@
       "description": "Particles that follow invisible currents. Create vector fields from noise, trace particles through them for organic art.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js, or openFrameworks. Focus on vector field mathematics and noise functions. Visualize the flow fields as you build them."
     },
     {
       "week": 14,
@@ -174,7 +179,8 @@
       "description": "Command your computer. Fork processes, connect them with pipes, handle signals, implement builtins.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "C (most educational), Rust (safer alternative), or Python. Use only OS-level APIs (fork, exec, pipe). No shell libraries\u2014build everything from system calls."
     },
     {
       "week": 15,
@@ -182,11 +188,10 @@
       "theme": "Video Games",
       "concept": "Gravity, jump physics, tile collision",
       "description": "3-5 connected single-screen rooms. One enemy type (patrols), collectible coins, exit door. Focus 80% on jump feel. Done = playable start-to-finish.",
-      "engine": "godot",
-      "engineNote": "Use Godot. Tilemaps, physics bodies, and the scene system make this much smoother. Focus your time on the jump feel, not the plumbing.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Godot. Tilemaps, physics bodies, and the scene system make this smoother. Focus your time on perfecting the jump feel, not fighting with boilerplate."
     },
     {
       "week": 16,
@@ -196,7 +201,8 @@
       "description": "Birds of a feather. Implement Reynolds' boids with separation, alignment, and cohesion for natural swarm behavior.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js, or Python + Pygame. The boids algorithm is the focus\u2014graphics can be simple circles. Visualize the force vectors for debugging."
     },
     {
       "week": 17,
@@ -206,19 +212,19 @@
       "description": "Your own Make or Just. Parse task definitions, build dependency graphs, execute tasks in parallel, implement watch mode for auto-rebuilding. Handle cross-platform paths and environment variables.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Rust or Go (good for concurrent systems), Python (easier graph algorithms). Build a parser (YAML/TOML), implement DAG traversal, and process management."
     },
     {
       "week": 18,
-      "title": "Roguelike",
+      "title": "Behavior Tree AI System",
       "theme": "Video Games",
-      "concept": "Procedural dungeon generation, turn-based logic",
-      "description": "True 7DRL scope: 5 floors, 3 enemy types, 3 item types, permadeath. ASCII or simple tiles. Turn-based. Done = can descend, fight, die, restart.",
-      "engine": "godot",
-      "engineNote": "Use Godot. Tilemaps for dungeon rendering, signals for turn flow. Alternatively, go terminal-based with a language you like.",
+      "concept": "Reusable AI architecture, decision trees, blackboard pattern",
+      "description": "Build a generic behavior tree framework from scratch. Implement core nodes (Sequence, Selector, Decorator, Condition, Action), create a debug visualizer showing active nodes, and demonstrate with an enemy AI that patrols, investigates sounds, and chases the player. Compare with finite state machines.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Any language + Raylib/Love2D/Pygame for visualization. Build the behavior tree as a library first, then create a visual demo showing AI decision-making."
     },
     {
       "week": 19,
@@ -228,7 +234,8 @@
       "description": "Grow digital forests. Implement L-systems to generate realistic branching structures and procedural plants.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js, or Python with turtle graphics. Focus on implementing the L-system grammar interpreter. The graphics are secondary to the algorithm."
     },
     {
       "week": 20,
@@ -238,17 +245,19 @@
       "description": "Match patterns like a pro. Build NFAs from regex syntax, convert to DFAs, and run pattern matching.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Any language you're comfortable with. Build NFAs and DFAs from scratch. Visualize the automata as you construct them\u2014tools like Graphviz can help."
     },
     {
       "week": 21,
-      "title": "Speedrun Week",
+      "title": "Research / Deep Dive Week",
       "theme": "Wild Card",
-      "concept": "Rapid prototyping, scope management",
-      "description": "Three tiny projects in one week. Practice scoping small, shipping fast, and iterating quickly.",
+      "concept": "Academic papers, advanced algorithms, deep exploration",
+      "description": "Pick a topic you're curious about (rendering algorithms, AI techniques, data structures, physics simulations) and go DEEP. Read academic papers, watch conference talks, implement research concepts. Don't just build—understand the theory behind it.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Any language you're comfortable with. Focus on learning, not speed. Use Jupyter notebooks for experiments, or build a small demo showcasing what you learned. Read papers from ArXiv, SIGGRAPH, GDC Vault."
     },
     {
       "week": 22,
@@ -256,11 +265,10 @@
       "theme": "Video Games",
       "concept": "Pathfinding (A*), wave systems",
       "description": "Fixed single path (skip A* unless you want it as the challenge). 3 tower types, 10 waves, win/lose state. Done = one complete map.",
-      "engine": "godot",
-      "engineNote": "Use Godot. Managing many entities, projectiles, and UI is much easier with an engine. Focus on game design, not boilerplate.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Godot. Managing many entities, projectiles, and UI is easier with an engine. Focus on game design and pathfinding, not entity management boilerplate."
     },
     {
       "week": 23,
@@ -270,7 +278,8 @@
       "description": "See the music. Use FFT to analyze audio frequencies, detect beats, and create reactive visual experiences.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js + Web Audio API, or Python + numpy for FFT. Learn how FFT works, implement beat detection algorithms, sync visuals to audio analysis."
     },
     {
       "week": 24,
@@ -280,7 +289,8 @@
       "description": "Your own Hugo. Parse Markdown, apply templates, generate a full static website from content files.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python, Rust, or Node.js. Build a Markdown parser (or use a library), implement a templating engine, and handle file I/O. No static site generators\u2014build it yourself."
     },
     {
       "week": 25,
@@ -288,11 +298,10 @@
       "theme": "Video Games",
       "concept": "Game state management, turn logic, effect systems",
       "description": "Combat loop only: 10-card deck, 3 energy per turn, 1 enemy. No deckbuilding, no map. Done = can win or lose one fight.",
-      "engine": "godot",
-      "engineNote": "Use Godot. The UI system (Control nodes) makes card layouts, hand management, and animations much easier.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Godot. The UI system (Control nodes) makes card layouts, hand management, and animations much easier. Focus on effect system architecture."
     },
     {
       "week": 26,
@@ -302,7 +311,8 @@
       "description": "Paint with math. Write fragment shaders to create mesmerizing visual effects, learn GLSL syntax and patterns.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "ShaderToy (web-based GLSL editor), or raw OpenGL/WebGL. Write fragment shaders from scratch. Learn GLSL syntax, coordinate systems, and common shader patterns."
     },
     {
       "week": 27,
@@ -312,7 +322,8 @@
       "description": "Professional-grade tab and session manager. Build a browser extension with tab grouping, session save/restore, fuzzy search across tabs, automatic tab suspension, keyboard shortcuts, and sync across devices. Handle edge cases like duplicate tabs and memory management.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "JavaScript/TypeScript with WebExtension APIs (cross-browser compatible). Use browser.storage for persistence, browser.tabs for management. No frameworks needed."
     },
     {
       "week": 28,
@@ -322,19 +333,19 @@
       "description": "Code that runs code. Tokenize, parse S-expressions, build an AST, and evaluate with lexical scoping.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python (easier to prototype), Rust (good error handling), or JavaScript. Build from scratch\u2014no parsing libraries. Learn about recursive descent parsing and environments."
     },
     {
       "week": 29,
-      "title": "Visual Novel",
+      "title": "Procedural Animation System",
       "theme": "Video Games",
-      "concept": "Dialogue systems, branching narratives, save states",
-      "description": "One scene, ~800 words dialogue, 2 meaningful choices, 2 endings. Done = both endings reachable.",
-      "engine": "godot",
-      "engineNote": "Use Godot (or Ren'Py if you want the easy path). Godot's UI and signal system handle dialogue boxes and branching well.",
+      "concept": "Inverse kinematics, procedural motion, constraint solving",
+      "description": "Build a 2D IK solver for character limbs (arm reaching toward mouse cursor), implement procedural walking/running cycles without sprite sheets, add ragdoll physics for death animations, and blend between procedural and keyframed animations. Visualize the skeleton and constraints.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Raylib, Love2D, or Pygame. The math is the point\u2014implement IK solvers (FABRIK, CCD) yourself. Visualize joints, bones, and constraints as you build."
     },
     {
       "week": 30,
@@ -344,17 +355,19 @@
       "description": "Infinite complexity. Render the Mandelbrot set, implement smooth coloring, and add infinite zoom capabilities.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js, Python + Pygame, or web canvas. Focus on complex number arithmetic and iterative algorithms. Implement smooth coloring and arbitrary precision zoom."
     },
     {
       "week": 31,
-      "title": "Collaboration Week",
+      "title": "Portfolio / Presentation Week",
       "theme": "Wild Card",
-      "concept": "Remote collaboration, code review, teamwork",
-      "description": "Find a partner online and build something together. Practice git workflows, code review, and communication.",
+      "concept": "Documentation, demos, professional presentation",
+      "description": "Make your best projects showcase-ready. Create professional documentation (README files with screenshots, architecture diagrams), record demo videos, write blog posts explaining what you built and learned, and create presentations. Focus on storytelling and making your work accessible to others.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "OBS Studio for screen recording, Markdown for documentation, Mermaid/Draw.io for diagrams. Consider writing on Dev.to, Medium, or your own blog. Create a portfolio website if you don't have one."
     },
     {
       "week": 32,
@@ -364,19 +377,19 @@
       "description": "Version control demystified. Implement blob storage, commits as DAG nodes, branches, and basic merge.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python, Rust, or Go. Build from scratch using only filesystem APIs and hash functions. Learn about SHA-1, blob storage, and directed acyclic graphs."
     },
     {
       "week": 33,
       "title": "Raycasting Maze",
       "theme": "Video Games",
       "concept": "Raycasting, pseudo-3D rendering",
-      "description": "Textured walls, floor/ceiling colors, minimap overlay. Load maze from file. No enemies—pure renderer. Done = walk around a maze.",
-      "engine": "raw",
-      "engineNote": "Go raw (Raylib, SDL, or even canvas/JS). The entire point is implementing the raycasting algorithm yourself. Godot would defeat the purpose.",
+      "description": "Textured walls, floor/ceiling colors, minimap overlay. Load maze from file. No enemies\u2014pure renderer. Done = walk around a maze.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Raylib, SDL, or even HTML canvas/JavaScript. The entire point is implementing the raycasting algorithm yourself. Use any language that lets you draw pixels."
     },
     {
       "week": 34,
@@ -386,7 +399,8 @@
       "description": "3D without polygons. Use signed distance functions to render complex 3D scenes entirely in a fragment shader.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "ShaderToy, WebGL, or raw OpenGL with GLSL. Write everything in a single fragment shader. Learn signed distance functions and ray marching techniques."
     },
     {
       "week": 35,
@@ -396,19 +410,19 @@
       "description": "Edit text in the terminal. Handle raw terminal input, implement efficient text buffers, render with ANSI codes.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "C, Rust, or Go. Use raw terminal APIs (termios on Unix, console API on Windows). Build buffer gap data structures and handle ANSI escape codes yourself."
     },
     {
       "week": 36,
-      "title": "Fighting Game",
+      "title": "Custom Physics Constraints",
       "theme": "Video Games",
-      "concept": "State machines, hitboxes/hurtboxes, frame data",
-      "description": "2 characters, 3 moves each (jab, heavy, special). Local 2-player only, no AI. Done = two humans can fight.",
-      "engine": "godot",
-      "engineNote": "Use Godot. AnimationPlayer for frame data, Area2D for hitboxes/hurtboxes, StateMachine via scripts. This one's complex enough to warrant an engine.",
+      "concept": "Constraint solving, soft body physics, Verlet integration",
+      "description": "Build advanced physics beyond basic collisions. Implement distance constraints (rope, chain), angular constraints (hinges, motors), soft body simulation (cloth, jello using Verlet integration), and create interactive physics toys to demonstrate each. Build on your Week 43 physics knowledge.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Raylib, Love2D, or Pygame for visualization. Implement constraint solvers from scratch using iterative methods. Build on physics knowledge from other weeks."
     },
     {
       "week": 37,
@@ -418,7 +432,8 @@
       "description": "Music that writes itself. Build a sequencer with algorithmic composition rules, explore generative melodies and rhythms.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python + midiutil, or JavaScript + Tone.js. Focus on algorithmic composition rules (Markov chains, cellular automata). MIDI is easier than raw audio synthesis."
     },
     {
       "week": 38,
@@ -428,7 +443,8 @@
       "description": "Physical computing intro. Read temperature and humidity sensors, log data over time, display on screen or web.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python on Raspberry Pi. Use GPIO libraries (RPi.GPIO or gpiozero), sensor libraries (DHT22, BME280), and data visualization (matplotlib or web dashboard)."
     },
     {
       "week": 39,
@@ -438,7 +454,8 @@
       "description": "Your own virtual machine. Design an instruction set, compile to bytecode, execute on a stack-based VM.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python, Rust, or C. Design your own instruction set, implement a stack, and write a bytecode interpreter. No VM libraries\u2014build the execution engine yourself."
     },
     {
       "week": 40,
@@ -446,21 +463,21 @@
       "theme": "Video Games",
       "concept": "3D math, projection, rasterization",
       "description": "Wireframe cube, spinning. Implement matrix transforms and perspective projection yourself. Stretch: filled triangles with flat shading. Done = cube rotates smoothly.",
-      "engine": "raw",
-      "engineNote": "MUST go raw. Use any language that lets you draw pixels (Raylib, SDL, canvas, etc). The entire point is doing the 3D math yourself—no engine.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Any language that lets you draw pixels: Raylib, SDL, HTML canvas, or Python + Pygame. Implement matrix math and perspective projection yourself. No 3D libraries."
     },
     {
       "week": 41,
-      "title": "Port Week",
+      "title": "Optimization / Performance Week",
       "theme": "Wild Card",
-      "concept": "Language comparison, platform differences",
-      "description": "Take a previous project and rewrite it in a different language or for a different platform.",
+      "concept": "Profiling, performance analysis, optimization techniques",
+      "description": "Pick a previous project and make it 10x faster. Learn profiling tools, identify bottlenecks, optimize algorithms and data structures. Measure everything. Understand what makes code truly fast—not just theoretically, but in practice with real measurements.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Use profiling tools for your language: perf/Valgrind (C/C++), py-spy/cProfile (Python), cargo-flamegraph (Rust), Chrome DevTools (JavaScript). Learn to read flamegraphs and identify hot paths."
     },
     {
       "week": 42,
@@ -470,7 +487,8 @@
       "description": "Distribute the load. Implement reverse proxying, multiple balancing strategies, and backend health monitoring.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python, Rust, or Go. Implement reverse proxying with raw sockets or http libraries. Build health checks, multiple balancing strategies (round-robin, least-connections)."
     },
     {
       "week": 43,
@@ -478,11 +496,10 @@
       "theme": "Video Games",
       "concept": "Rigid body physics, constraints, impulse resolution",
       "description": "Circles only (skip boxes for simpler math). Gravity, bounce off walls and each other. Click to spawn. Done = 20+ circles run smoothly.",
-      "engine": "raw",
-      "engineNote": "MUST go raw. The whole point is implementing physics yourself—collision detection, impulse resolution, velocity integration. Godot's physics would skip the learning.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Raylib, SDL, Love2D, or Pygame. Implement physics from scratch\u2014collision detection, impulse resolution, velocity integration. No physics libraries like Box2D."
     },
     {
       "week": 44,
@@ -492,7 +509,8 @@
       "description": "Art that responds. Use webcam or microphone input to create interactive visual experiences that react to the viewer.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Processing, p5.js + ml5.js (for webcam), or Python + OpenCV. Use webcam input, microphone FFT, or sensor data. Make visuals react in real-time."
     },
     {
       "week": 45,
@@ -502,7 +520,8 @@
       "description": "Play games your way. Build a custom controller with Arduino that registers as a USB HID device.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Arduino IDE with Arduino Leonardo/Micro (native USB HID support). Learn USB HID protocols, button debouncing, and joystick/keyboard emulation."
     },
     {
       "week": 46,
@@ -512,7 +531,8 @@
       "description": "Async communication backbone. Build publish/subscribe, message persistence, and consumer groups.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python, Rust, or Go. Build from scratch using sockets or async libraries. Implement pub/sub patterns, message queues, and persistence (write to disk)."
     },
     {
       "week": 47,
@@ -520,11 +540,10 @@
       "theme": "Video Games",
       "concept": "Networking basics, client-server, latency handling",
       "description": "Networked Pong OR shared drawing canvas. Websockets, 2 players, client-server (not P2P). Done = two browsers/clients can connect and interact.",
-      "engine": "either",
-      "engineNote": "Godot has networking built in and works well. But doing it raw (Node.js + websockets, or Python) teaches you more. Depends if you want to learn networking or game networking.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Raw websockets: Node.js + ws library, Python + websockets, or use Godot's built-in networking. Client-server architecture\u2014no P2P. Focus on state synchronization."
     },
     {
       "week": 48,
@@ -534,7 +553,8 @@
       "description": "Light up your desk. Drive an LED matrix, implement pixel buffering, create animations and scrolling text.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Arduino or Raspberry Pi. Use SPI/I2C protocols to drive LED matrices (e.g., MAX7219). Learn pixel buffering, frame timing, and animation techniques."
     },
     {
       "week": 49,
@@ -544,7 +564,8 @@
       "description": "Lint your own code. Parse source into AST, traverse to find issues, report with helpful messages.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python, Rust, or JavaScript. Use a parsing library to build an AST (e.g., tree-sitter, swc). Implement AST traversal and pattern matching for lint rules."
     },
     {
       "week": 50,
@@ -552,11 +573,10 @@
       "theme": "Video Games",
       "concept": "Juice, particles, audio, publishing",
       "description": "Take your favorite game project. Add: screenshake, 3 sound effects, particle system, title screen, build for web or desktop. Done = someone else can download and play it.",
-      "engine": "match-original",
-      "engineNote": "Use whatever engine/framework the original project used. This week is about polish, not rewriting.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Use whatever engine/framework the original project used. This week is about polish, not rewriting. Add screenshake, particles, sounds, and build for distribution."
     },
     {
       "week": 51,
@@ -566,7 +586,8 @@
       "description": "Smart home DIY. Build sensors that trigger actions via MQTT or webhooks, integrate with existing systems.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Python or Node.js on Raspberry Pi or ESP32. Use MQTT libraries (paho-mqtt, mqtt.js) or HTTP webhooks. Integrate with Home Assistant or other platforms."
     },
     {
       "week": 52,
@@ -576,7 +597,8 @@
       "description": "Revisit your favorite project from the year. Add polish, write documentation, make it portfolio-ready.",
       "link": "",
       "completed": false,
-      "pinned": false
+      "pinned": false,
+      "recommendedTools": "Use tools appropriate to the project you're polishing. Focus on documentation (README, code comments), refactoring, and making it portfolio-ready."
     }
   ],
   "demoProject": [
@@ -590,7 +612,8 @@
       "link": "#",
       "githubLink": "#",
       "completed": true,
-      "pinned": true
+      "pinned": true,
+      "recommendedTools": "Any tools you prefer\u2014this is a demo card for the website."
     }
   ]
 }

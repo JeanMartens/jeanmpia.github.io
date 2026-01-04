@@ -94,12 +94,10 @@ export default function ProjectPage() {
             </div>
 
                         
-            {project.engine && (
+            {project.recommendedTools && (
                 <div className="text-sm text-gray-500">
-                    <p><span className="font-semibold">Engine:</span> {project.engine}</p>
-                    {project.engineNote && (
-                        <p className="italic mt-1">{project.engineNote}</p>
-                    )}
+                    <p><span className="font-semibold">Recommanded tools:</span></p>
+                        <p className="italic mt-1">{project.recommendedTools}</p>
                 </div>
             )}
 
