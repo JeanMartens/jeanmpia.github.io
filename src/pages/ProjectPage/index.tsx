@@ -77,6 +77,17 @@ export default function ProjectPage() {
 
             <h1 className="text-4xl font-bold">{project.title}</h1>
 
+            {/* Project Image */}
+            {project.img && (
+                <div className="w-full rounded-lg overflow-hidden ring-1 ring-gray-200">
+                    <img 
+                        src={`/assets/${project.img}`}
+                        alt={project.title}
+                        className="w-full h-auto object-cover max-h-96"
+                    />
+                </div>
+            )}
+
             <div className="ring-1 ring-gray-200 rounded-lg p-6 bg-gray-50">
                 <h2 className="text-lg font-semibold text-gray-700 mb-2">Concept</h2>
                 <p className="text-gray-600">{project.concept}</p>

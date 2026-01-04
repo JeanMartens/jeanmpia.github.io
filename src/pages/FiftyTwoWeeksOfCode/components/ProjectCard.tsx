@@ -18,8 +18,7 @@ export default function ProjectCard({ ...project }: Project) {
     >
         {project.img ? (
             <img
-            // test path C:\Users\jeanb\Documents\misc-code\jeanmpia.github.io\src\assets\jonah-factory-export.gif
-            src={ `/assets/${project.img}` }
+            src={`/assets/${project.img}`}
             alt={project.title}
             className="absolute inset-0 h-full w-full object-cover transition-all duration-300 group-hover:blur-md group-hover:scale-105"
             />
