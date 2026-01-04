@@ -30,8 +30,9 @@ export default function FiftyTwoWeeksOfCode() {
             <header>
                 <h1 className="text-3xl font-bold text-gray-900">52 Weeks of Code</h1>
                 <p className="mt-2 text-gray-600">
-                    A personal challenge to code every week for an entire year — tackling new problems,
+                    A personal coding challenge every week — tackling new problems,
                     learning technologies, and building projects.
+                    
                 </p>
             </header>
 
@@ -55,7 +56,7 @@ export default function FiftyTwoWeeksOfCode() {
                 <h2 className="text-lg font-semibold text-gray-900 border-b pb-2">All Projects</h2>
 
                 <Tabs defaultValue="themes" className="w-full">
-                    <TabsList>
+                    <TabsList className="bg-gray-100">
                         <TabsTrigger value="themes">By Theme</TabsTrigger>
                         <TabsTrigger value="weeks">By Week</TabsTrigger>
                     </TabsList>
