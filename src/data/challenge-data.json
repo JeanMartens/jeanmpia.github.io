@@ -1,0 +1,551 @@
+{
+  "themes": [
+    {
+      "name": "Video Games",
+      "icon": "Gamepad2",
+      "description": "Build games from scratch, exploring mechanics from physics to networking"
+    },
+    {
+      "name": "Creative Coding",
+      "icon": "Palette",
+      "description": "Generative art, shaders, and audio-visual experiments"
+    },
+    {
+      "name": "Build Your Own X",
+      "icon": "Wrench",
+      "description": "Demystify tools by rebuilding them: databases, shells, interpreters"
+    },
+    {
+      "name": "Tools & Hardware",
+      "icon": "Cpu",
+      "description": "Practical utilities and physical computing projects"
+    },
+    {
+      "name": "Wild Card",
+      "icon": "Sparkles",
+      "description": "Flexible weeks for exploration, collaboration, or polish"
+    }
+  ],
+  "projects": [
+    {
+      "week": 1,
+      "title": "Pong Clone",
+      "theme": "Video Games",
+      "concept": "Game loop, delta time, basic collision",
+      "description": "The classic that started it all. Learn the fundamentals of game loops, frame-independent movement with delta time, and simple AABB collision detection.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 2,
+      "title": "Breakout",
+      "theme": "Video Games",
+      "concept": "Sprite management, object pooling",
+      "description": "Manage dozens of bricks efficiently. Learn sprite batching, object pooling to avoid garbage collection, and level design basics.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 3,
+      "title": "Platformer (Mario-style)",
+      "theme": "Video Games",
+      "concept": "Gravity, jump physics, tile collision",
+      "description": "Master the feel of a good jump. Implement gravity, variable jump height, coyote time, and tile-based collision detection.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 4,
+      "title": "Top-down Shooter",
+      "theme": "Video Games",
+      "concept": "Vectors, bullet patterns, spawning systems",
+      "description": "Bullets everywhere! Work with 2D vectors, create interesting bullet patterns, and build robust enemy spawning systems.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 5,
+      "title": "Roguelike (7DRL style)",
+      "theme": "Video Games",
+      "concept": "Procedural dungeon generation, turn-based logic",
+      "description": "Generate infinite dungeons. Implement BSP or cellular automata for level generation, plus turn-based game flow.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 6,
+      "title": "Tower Defense",
+      "theme": "Video Games",
+      "concept": "Pathfinding (A*), wave systems",
+      "description": "Enemies that find their way. Implement A* pathfinding, build a wave spawning system, and handle tower targeting logic.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 7,
+      "title": "Fighting Game",
+      "theme": "Video Games",
+      "concept": "State machines, hitboxes/hurtboxes, frame data",
+      "description": "Frame-perfect combat. Build character state machines, separate hitbox/hurtbox systems, and understand frame advantage.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 8,
+      "title": "Card Battler",
+      "theme": "Video Games",
+      "concept": "Game state management, turn logic, effect systems",
+      "description": "Slay the Spire vibes. Handle complex game state, implement a turn system, and build composable card effect systems.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 9,
+      "title": "Puzzle Game (Sokoban)",
+      "theme": "Video Games",
+      "concept": "Grid logic, undo systems",
+      "description": "Push boxes, solve puzzles. Implement grid-based movement, robust undo/redo with command pattern, and level serialization.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 10,
+      "title": "Visual Novel",
+      "theme": "Video Games",
+      "concept": "Dialogue systems, branching narratives, save states",
+      "description": "Tell interactive stories. Build a dialogue engine, handle branching paths, and implement save/load for complex state.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 11,
+      "title": "Multiplayer Game",
+      "theme": "Video Games",
+      "concept": "Networking basics, client-server, latency handling",
+      "description": "Real-time multiplayer. Learn client-server architecture, state synchronization, and lag compensation techniques.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 12,
+      "title": "3D Software Renderer",
+      "theme": "Video Games",
+      "concept": "3D math, projection, rasterization",
+      "description": "3D without a GPU. Implement matrix transforms, perspective projection, and triangle rasterization from scratch.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 13,
+      "title": "Raycasting Maze (Wolfenstein)",
+      "theme": "Video Games",
+      "concept": "Raycasting, pseudo-3D rendering",
+      "description": "Fake 3D that fooled everyone in 1992. Cast rays to render walls, handle texturing, and create that classic FPS feel.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 14,
+      "title": "Physics Sandbox",
+      "theme": "Video Games",
+      "concept": "Rigid body physics, constraints, impulse resolution",
+      "description": "Make things bounce and collide. Implement rigid body dynamics, collision response, and simple constraints.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 15,
+      "title": "Game Jam Polish Week",
+      "theme": "Video Games",
+      "concept": "Juice, particles, audio, publishing",
+      "description": "Make it feel good. Add screenshake, particles, sound effects, and learn to package and publish a game.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 16,
+      "title": "Terrain Generator",
+      "theme": "Creative Coding",
+      "concept": "Perlin/simplex noise",
+      "description": "Mountains from math. Use noise functions to generate realistic heightmaps, add erosion, and render as 2D or 3D terrain.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 17,
+      "title": "Particle Fireworks",
+      "theme": "Creative Coding",
+      "concept": "Particle systems, emission, lifetime",
+      "description": "Explosions of color. Build a flexible particle system with emitters, forces, lifetime, and blending modes.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 18,
+      "title": "Fractal Explorer",
+      "theme": "Creative Coding",
+      "concept": "Complex numbers, iterative rendering, zoom",
+      "description": "Infinite complexity. Render the Mandelbrot set, implement smooth coloring, and add infinite zoom capabilities.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 19,
+      "title": "Procedural Trees",
+      "theme": "Creative Coding",
+      "concept": "L-systems, recursion",
+      "description": "Grow digital forests. Implement L-systems to generate realistic branching structures and procedural plants.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 20,
+      "title": "Shader Art",
+      "theme": "Creative Coding",
+      "concept": "Fragment shaders, GLSL basics",
+      "description": "Paint with math. Write fragment shaders to create mesmerizing visual effects, learn GLSL syntax and patterns.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 21,
+      "title": "Audio Visualizer",
+      "theme": "Creative Coding",
+      "concept": "FFT, frequency analysis, beat detection",
+      "description": "See the music. Use FFT to analyze audio frequencies, detect beats, and create reactive visual experiences.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 22,
+      "title": "Game of Life Variants",
+      "theme": "Creative Coding",
+      "concept": "Cellular automata, rule systems",
+      "description": "Emergence from simple rules. Implement Conway's Game of Life, then explore variations and custom rulesets.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 23,
+      "title": "Flocking Simulation",
+      "theme": "Creative Coding",
+      "concept": "Boids algorithm, emergent behavior",
+      "description": "Birds of a feather. Implement Reynolds' boids with separation, alignment, and cohesion for natural swarm behavior.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 24,
+      "title": "Flow Field Art",
+      "theme": "Creative Coding",
+      "concept": "Vector fields, noise-driven motion",
+      "description": "Particles that follow invisible currents. Create vector fields from noise, trace particles through them for organic art.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 25,
+      "title": "Ray Marching Scene",
+      "theme": "Creative Coding",
+      "concept": "Signed distance functions, 3D shaders",
+      "description": "3D without polygons. Use signed distance functions to render complex 3D scenes entirely in a fragment shader.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 26,
+      "title": "Generative Music Tool",
+      "theme": "Creative Coding",
+      "concept": "Algorithmic composition, sequencing",
+      "description": "Music that writes itself. Build a sequencer with algorithmic composition rules, explore generative melodies and rhythms.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 27,
+      "title": "Interactive Installation",
+      "theme": "Creative Coding",
+      "concept": "Webcam/mic input, real-time interaction",
+      "description": "Art that responds. Use webcam or microphone input to create interactive visual experiences that react to the viewer.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 28,
+      "title": "HTTP Server",
+      "theme": "Build Your Own X",
+      "concept": "Sockets, protocol parsing, request/response",
+      "description": "The foundation of the web. Parse HTTP requests, handle routing, serve static files, all from raw sockets.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 29,
+      "title": "Key-Value Database",
+      "theme": "Build Your Own X",
+      "concept": "Storage engines, persistence, indexing",
+      "description": "Your own Redis. Implement in-memory storage with persistence, learn about write-ahead logs and basic indexing.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 30,
+      "title": "Unix Shell",
+      "theme": "Build Your Own X",
+      "concept": "Process forking, pipes, system calls",
+      "description": "Command your computer. Fork processes, connect them with pipes, handle signals, implement builtins.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 31,
+      "title": "Regex Engine",
+      "theme": "Build Your Own X",
+      "concept": "Finite automata, pattern matching",
+      "description": "Match patterns like a pro. Build NFAs from regex syntax, convert to DFAs, and run pattern matching.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 32,
+      "title": "Git (Simplified)",
+      "theme": "Build Your Own X",
+      "concept": "Content-addressable storage, DAGs, hashing",
+      "description": "Version control demystified. Implement blob storage, commits as DAG nodes, branches, and basic merge.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 33,
+      "title": "Lisp Interpreter",
+      "theme": "Build Your Own X",
+      "concept": "Parsing, AST, evaluation, environments",
+      "description": "Code that runs code. Tokenize, parse S-expressions, build an AST, and evaluate with lexical scoping.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 34,
+      "title": "Stack-based VM",
+      "theme": "Build Your Own X",
+      "concept": "Bytecode, instruction sets, execution",
+      "description": "Your own virtual machine. Design an instruction set, compile to bytecode, execute on a stack-based VM.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 35,
+      "title": "Terminal Text Editor",
+      "theme": "Build Your Own X",
+      "concept": "Buffer gap, escape codes, cursor handling",
+      "description": "Edit text in the terminal. Handle raw terminal input, implement efficient text buffers, render with ANSI codes.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 36,
+      "title": "Static Site Generator",
+      "theme": "Build Your Own X",
+      "concept": "Templating, file I/O, Markdown parsing",
+      "description": "Your own Hugo. Parse Markdown, apply templates, generate a full static website from content files.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 37,
+      "title": "Load Balancer",
+      "theme": "Build Your Own X",
+      "concept": "Round-robin, health checks, proxying",
+      "description": "Distribute the load. Implement reverse proxying, multiple balancing strategies, and backend health monitoring.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 38,
+      "title": "Message Queue",
+      "theme": "Build Your Own X",
+      "concept": "Pub/sub, async processing, durability",
+      "description": "Async communication backbone. Build publish/subscribe, message persistence, and consumer groups.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 39,
+      "title": "Code Linter",
+      "theme": "Build Your Own X",
+      "concept": "AST traversal, rule systems, reporting",
+      "description": "Lint your own code. Parse source into AST, traverse to find issues, report with helpful messages.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 40,
+      "title": "CLI File Organizer",
+      "theme": "Tools & Hardware",
+      "concept": "Argument parsing, file system operations",
+      "description": "Tame your downloads folder. Build a CLI tool that sorts files by type, date, or custom rules.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 41,
+      "title": "Browser Extension",
+      "theme": "Tools & Hardware",
+      "concept": "Extension APIs, browser internals",
+      "description": "Extend your browser. Build a tab manager, bookmark tool, or productivity extension using WebExtension APIs.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 42,
+      "title": "Personal Dashboard",
+      "theme": "Tools & Hardware",
+      "concept": "API aggregation, data visualization",
+      "description": "Your life at a glance. Aggregate data from multiple APIs, display weather, tasks, calendar, and custom widgets.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 43,
+      "title": "Meal Planner",
+      "theme": "Tools & Hardware",
+      "concept": "CRUD operations, local storage, calculations",
+      "description": "Plan your meals like you already do. Build a tool with recipes, calorie calculations, and weekly planning.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 44,
+      "title": "Raspberry Pi Weather Station",
+      "theme": "Tools & Hardware",
+      "concept": "Sensors, GPIO, data logging",
+      "description": "Physical computing intro. Read temperature and humidity sensors, log data over time, display on screen or web.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 45,
+      "title": "Custom Game Controller",
+      "theme": "Tools & Hardware",
+      "concept": "HID protocols, hardware input",
+      "description": "Play games your way. Build a custom controller with Arduino that registers as a USB HID device.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 46,
+      "title": "LED Matrix Display",
+      "theme": "Tools & Hardware",
+      "concept": "SPI/I2C, pixel buffers, animations",
+      "description": "Light up your desk. Drive an LED matrix, implement pixel buffering, create animations and scrolling text.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 47,
+      "title": "Home Automation Trigger",
+      "theme": "Tools & Hardware",
+      "concept": "MQTT, webhooks, event-driven design",
+      "description": "Smart home DIY. Build sensors that trigger actions via MQTT or webhooks, integrate with existing systems.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 48,
+      "title": "Childhood Game Remake",
+      "theme": "Wild Card",
+      "concept": "Reverse engineering, nostalgia-driven design",
+      "description": "Recreate a game from memory. Figure out the mechanics of something you loved, rebuild it with fresh eyes.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 49,
+      "title": "Collaboration Week",
+      "theme": "Wild Card",
+      "concept": "Remote collaboration, code review, teamwork",
+      "description": "Find a partner online and build something together. Practice git workflows, code review, and communication.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 50,
+      "title": "Port Week",
+      "theme": "Wild Card",
+      "concept": "Language comparison, platform differences",
+      "description": "Take a previous project and rewrite it in a different language or for a different platform.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 51,
+      "title": "Speedrun Week",
+      "theme": "Wild Card",
+      "concept": "Rapid prototyping, scope management",
+      "description": "Three tiny projects in one week. Practice scoping small, shipping fast, and iterating quickly.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "week": 52,
+      "title": "Polish Week",
+      "theme": "Wild Card",
+      "concept": "Finishing, documentation, presentation",
+      "description": "Revisit your favorite project from the year. Add polish, write documentation, make it portfolio-ready.",
+      "link": "",
+      "completed": false,
+      "pinned": false
+    }
+  ]
+}
