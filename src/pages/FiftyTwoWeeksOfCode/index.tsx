@@ -2,6 +2,7 @@ import challengeData from '@/data/challenge-data.json';
 import type { Theme, Project } from '@/types/fiftytwoweeksofcode';
 
 import ProjectCard from './components/ProjectCard'
+import ProjectsDateView from './components/ProjectsDateView';
 
 import {
   Tabs,
@@ -65,8 +66,8 @@ export default function FiftyTwoWeeksOfCode() {
                             
                             return (
                                 <div key={themeIndex} className="space-y-3">
-                                    <h3 className="text-md font-semibold text-gray-800">
-                                        {Icon && <Icon className="inline-block w-5 h-5 mr-2 text-gray-600" />}
+                                    <h3 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
+                                        {Icon && <Icon className="w-5 h-5 text-gray-600" />}
                                         {theme.name}
                                     </h3>
                                     <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-6">
@@ -80,15 +81,8 @@ export default function FiftyTwoWeeksOfCode() {
                             );
                         })}
                     </TabsContent>
-                    
-                    <TabsContent value="weeks" className="mt-4">
-                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-6">
-                            {projects
-                                .sort((a, b) => a.week - b.week)
-                                .map((project, index) => (
-                                    <ProjectCard key={index} {...project} />
-                                ))}
-                        </div>
+                    <TabsContent value="weeks" className="mt-4 space-y-6">
+                        <ProjectsDateView projects={projects} />
                     </TabsContent>
                 </Tabs>
             </section>

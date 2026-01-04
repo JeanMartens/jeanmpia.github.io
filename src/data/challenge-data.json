@@ -577,7 +577,9 @@
       "link": "",
       "completed": false,
       "pinned": false
-    },
+    }
+  ],
+  "demoProject": [
     {
       "week": 53,
       "title": "Demo Card",
