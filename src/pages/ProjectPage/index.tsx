@@ -89,7 +89,7 @@ export default function ProjectPage() {
             )}
 
             <div className="ring-1 ring-gray-200 rounded-lg p-6 bg-gray-50">
-                <h2 className="text-lg font-semibold text-gray-700 mb-2">Concept</h2>
+                <h2 className="text-lg font-semibold text-gray-700 mb-2">Concept learnt</h2>
                 <p className="text-gray-600">{project.concept}</p>
             </div>
 
@@ -105,7 +105,7 @@ export default function ProjectPage() {
 
 
             <div>
-                <h2 className="text-lg font-semibold text-gray-700 mb-2">Description</h2>
+                <h2 className="text-lg font-semibold text-gray-700 mb-2">Instructions:</h2>
                 <p className="text-gray-700 leading-relaxed">{project.description}</p>
             </div>
 

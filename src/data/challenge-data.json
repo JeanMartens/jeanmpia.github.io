@@ -29,10 +29,10 @@
   "projects": [
     {
       "week": 1,
-      "title": "CLI File Organizer",
+      "title": "Git TUI (Terminal UI)",
       "theme": "Tools & Hardware",
-      "concept": "Argument parsing, file system operations",
-      "description": "Tame your downloads folder. Build a CLI tool that sorts files by type, date, or custom rules.",
+      "concept": "Terminal rendering, git internals, event loops",
+      "description": "Interactive git interface in the terminal. Build a TUI with real-time file status, interactive staging/unstaging, commit history browser, and branch visualization. Learn libraries like ratatui (Rust) or blessed/rich (Python).",
       "link": "",
       "completed": false,
       "pinned": false
@@ -93,10 +93,10 @@
     },
     {
       "week": 7,
-      "title": "Browser Extension",
+      "title": "Local Code Search Engine",
       "theme": "Tools & Hardware",
-      "concept": "Extension APIs, browser internals",
-      "description": "Extend your browser. Build a tab manager, bookmark tool, or productivity extension using WebExtension APIs.",
+      "concept": "Inverted indices, tokenization, fuzzy matching",
+      "description": "Index and search your entire codebase. Build an inverted index for fast searches, implement fuzzy matching and regex support, add file previews in results. Handle multiple languages and respect .gitignore.",
       "link": "",
       "completed": false,
       "pinned": false
@@ -200,10 +200,10 @@
     },
     {
       "week": 17,
-      "title": "Personal Dashboard",
+      "title": "Task Runner/Build Tool",
       "theme": "Tools & Hardware",
-      "concept": "API aggregation, data visualization",
-      "description": "Your life at a glance. Aggregate data from multiple APIs, display weather, tasks, calendar, and custom widgets.",
+      "concept": "Dependency graphs, parallel execution, file watching",
+      "description": "Your own Make or Just. Parse task definitions, build dependency graphs, execute tasks in parallel, implement watch mode for auto-rebuilding. Handle cross-platform paths and environment variables.",
       "link": "",
       "completed": false,
       "pinned": false
@@ -306,10 +306,10 @@
     },
     {
       "week": 27,
-      "title": "Meal Planner",
+      "title": "Smart Tab Manager Extension",
       "theme": "Tools & Hardware",
-      "concept": "CRUD operations, local storage, calculations",
-      "description": "Plan your meals. Build a tool with recipes, calorie calculations, and weekly planning.",
+      "concept": "WebExtension APIs, state persistence, keyboard shortcuts",
+      "description": "Professional-grade tab and session manager. Build a browser extension with tab grouping, session save/restore, fuzzy search across tabs, automatic tab suspension, keyboard shortcuts, and sync across devices. Handle edge cases like duplicate tabs and memory management.",
       "link": "",
       "completed": false,
       "pinned": false
