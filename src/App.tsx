@@ -1,13 +1,14 @@
+import FiftyTwoWeeksOfCode from './pages/FiftyTwoWeeksOfCode'
+import Menu from './pages/Menu'
+
+import { Routes, Route } from 'react-router-dom'
+
 function App() {
   return (
-    <div className="min-h-screen bg-background p-8">
-      <h1 className="text-3xl font-bold text-foreground">
-        Ready to go!
-      </h1>
-      <p className="mt-2 text-muted-foreground">
-        TypeScript + Tailwind + shadcn/ui configured.
-      </p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Menu />} />
+      <Route path="/52-weeks-of-code" element={<FiftyTwoWeeksOfCode />} />
+    </Routes>
   )
 }
 
