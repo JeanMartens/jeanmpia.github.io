@@ -12,6 +12,9 @@ export interface Project {
     theme: string;
     concept: string;
     description: string;
+    engine?: string;
+    engineNote?: string;
+    githubLink?: string;
     link: string;
     completed: boolean;
     pinned: boolean;
